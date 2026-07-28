@@ -24,8 +24,35 @@ Levanta `rosbridge_websocket` (puerto **9090**, para Unity/RosSharp) +
 
 ## Modo real (requiere el controlador FR5/AN5 en 192.168.58.2)
 
+Bundleado, los tres procesos en un solo contenedor (`real.launch.py`):
+
 ```bash
 docker compose --profile real up fr5-real
+```
+
+### Modo real: nodos separados (un contenedor por nodo)
+
+Igual que corriendolo nativo en 4 terminales separadas, pero cada uno en su
+propio contenedor (mismo `network_mode: host`, se descubren entre si sin
+problema). Preferible si queres poder reiniciar/inspeccionar un nodo sin
+tocar los demas -- es lo que automatiza `setup_an5_robot_windows.sh`:
+
+```bash
+# Terminal 1: driver real
+docker compose --profile real run --rm --name an5_ros2_cmd_server fr5-real \
+    ros2 run fr_ros2 ros2_cmd_server
+
+# Terminal 2: rosbridge (puerto 9090, Unity/RosSharp)
+docker compose --profile real run --rm --name an5_rosbridge fr5-real \
+    ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+
+# Terminal 3: puente /api_command -> /FR_ROS_API_service
+docker compose --profile real run --rm --name an5_publisher_subscriber fr5-real \
+    ros2 run code publisher_subscriber
+
+# Terminal 4 (opcional): ver los comandos que manda Unity
+docker compose --profile real run --rm --name an5_api_command_echo fr5-real \
+    ros2 topic echo /api_command
 ```
 
 ## Notas

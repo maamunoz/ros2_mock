@@ -63,8 +63,8 @@ source install/setup.bash
 ros2 topic echo /api_command
 ```
 
-`setup_an5_robot_windows.sh` automates opening terminals 1-4 (plus MATLAB
-and Unity) as separate `gnome-terminal` windows.
+`setup_an5_robot_windows.sh` automates opening these 4 terminals — routed
+through Docker rather than a native install, see section 3.
 
 ## 2. ROS2 mock to simulate the robot
 
@@ -98,9 +98,32 @@ docker compose build
 # Simulated mode (default, no physical robot needed)
 docker compose up fr5-sim
 
-# Real mode (requires the FR5/AN5 controller at 192.168.58.2)
+# Real mode, bundled (requires the FR5/AN5 controller at 192.168.58.2)
 docker compose --profile real up fr5-real
 ```
+
+Real mode can also be run as separate per-node containers, matching the
+terminal-per-node layout in section 1 — one `docker compose run` per node
+instead of `fr5-sim`'s single bundled container:
+
+```bash
+docker compose --profile real run --rm --name an5_ros2_cmd_server fr5-real \
+    ros2 run fr_ros2 ros2_cmd_server
+
+docker compose --profile real run --rm --name an5_rosbridge fr5-real \
+    ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+
+docker compose --profile real run --rm --name an5_publisher_subscriber fr5-real \
+    ros2 run code publisher_subscriber
+
+# optional: watch commands Unity is sending
+docker compose --profile real run --rm --name an5_api_command_echo fr5-real \
+    ros2 topic echo /api_command
+```
+
+`setup_an5_robot_windows.sh` automates opening these 4 nodes as separate
+`gnome-terminal` windows, each running via `docker compose run` instead of
+a native install.
 
 See [`DOCKER.md`](DOCKER.md) for networking notes (`network_mode: host`
 vs. Docker Desktop), passing launch arguments through `docker compose run`,
