@@ -7,6 +7,44 @@ ROS2 (`/FR_ROS_API_service`, `nonrt_state_data`, `/joint_states`,
 `current_joint_position`, `current_cartesian_position`), asi que Unity
 nunca necesita saber cual de las tres esta corriendo por debajo.
 
+## Requisitos (correr sin Docker)
+
+Para clonar este repo en otro equipo y correr el modo sim o real de forma
+nativa (sin Docker):
+
+- Ubuntu 22.04 (u otra distro compatible) con **ROS 2 Humble** instalado
+  (`ros-humble-ros-base` alcanza, no hace falta `desktop`).
+- `build-essential`, `python3-colcon-common-extensions`, `python3-rosdep`.
+- **`ros-humble-rosbridge-server`** — no viene con el ROS base, hay que
+  instalarlo aparte (`sudo apt install ros-humble-rosbridge-server`).
+  Necesario en ambos modos: tanto `sim.launch.py`/`real.launch.py` como
+  las terminales sueltas del modo real levantan `rosbridge_websocket`.
+- Python: nada fuera de la stdlib + `rclpy` (`publisher_subscriber.py` y
+  `mock_cmd_server.py` solo usan `xmlrpc.client`, `socket`, `threading`,
+  `time`, `math`, `random`, `re`) — no hace falta `pip install` nada.
+- Solo para modo real: el equipo tiene que poder alcanzar
+  `192.168.58.2` (IP del controlador, hardcodeada en `ROS_API.cpp` /
+  `state_feedback.cpp` / `publisher_subscriber.py`) en los puertos
+  `8080`/`8082`/`8083` (driver TCP) y `20003` (XML-RPC).
+- Puerto `9090` alcanzable para que Unity se conecte por
+  `rosbridge_websocket` (ambos modos).
+- Si Unity corre en otra maquina que los nodos ROS2, todos necesitan el
+  mismo `ROS_DOMAIN_ID`.
+
+`build/`, `install/` y `log/` **no** estan en el repo (ver `.gitignore`):
+son artefactos de `colcon build`, se regeneran localmente y no son
+portables entre equipos (traen rutas absolutas hardcodeadas).
+
+## Build
+
+```bash
+cd ~/ros2_ws
+rosdep update
+rosdep install --from-paths src --ignore-src -r -y
+colcon build --symlink-install
+source install/setup.bash
+```
+
 ## Paquetes
 
 | Paquete | Tipo | Rol |
@@ -133,10 +171,3 @@ como ventanas `gnome-terminal` separadas, cada una corriendo via
 Ver [`DOCKER.md`](DOCKER.md) para notas de red (`network_mode: host` vs.
 Docker Desktop), como pasar argumentos de launch con
 `docker compose run`, e instrucciones de rebuild.
-
-## Build nativo (sin Docker)
-
-```bash
-colcon build --symlink-install
-source install/setup.bash
-```

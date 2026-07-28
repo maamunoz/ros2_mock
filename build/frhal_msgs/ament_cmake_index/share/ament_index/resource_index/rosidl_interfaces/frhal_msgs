@@ -1,6 +1,0 @@
-msg/FRState.idl
-msg/FRState.msg
-srv/ROSCmdInterface.idl
-srv/ROSCmdInterface.srv
-srv/ROSCmdInterface_Request.msg
-srv/ROSCmdInterface_Response.msg
