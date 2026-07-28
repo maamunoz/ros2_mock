@@ -30,14 +30,41 @@ the robot controller at `192.168.58.2` (ports `8080`/`8082` for commands,
 (Fairino SDK, port `20003`) to publish `current_joint_position` /
 `current_cartesian_position` — the topics Unity actually reads.
 
-Run both together (plus `rosbridge_websocket` on port `9090`) with:
+Unlike the mock (which bundles everything into a single `sim.launch.py`),
+real mode is run as separate nodes in separate terminals — one process per
+concern, so each can be restarted/inspected independently. Requires the
+physical controller reachable at `192.168.58.2`.
 
 ```bash
+# Terminal 1: ROS2 command server (the real driver)
+cd ~/ros2_ws
 source install/setup.bash
-ros2 launch an5_mock_sim real.launch.py
+ros2 run fr_ros2 ros2_cmd_server
 ```
 
-Requires the physical controller reachable at `192.168.58.2`.
+```bash
+# Terminal 2: ROSBridge server (port 9090, for Unity/RosSharp)
+cd ~/ros2_ws
+source install/setup.bash
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+```
+
+```bash
+# Terminal 3: Publisher/subscriber bridge (/api_command -> /FR_ROS_API_service)
+cd ~/ros2_ws
+source install/setup.bash
+ros2 run code publisher_subscriber
+```
+
+```bash
+# Terminal 4 (optional): watch commands Unity is sending
+cd ~/ros2_ws
+source install/setup.bash
+ros2 topic echo /api_command
+```
+
+`setup_an5_robot_windows.sh` automates opening terminals 1-4 (plus MATLAB
+and Unity) as separate `gnome-terminal` windows.
 
 ## 2. ROS2 mock to simulate the robot
 
