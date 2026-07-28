@@ -140,34 +140,11 @@ docker compose build
 # Modo simulado (default, sin robot fisico)
 docker compose up fr5-sim
 
-# Modo real, bundleado (requiere el controlador FR5/AN5 en 192.168.58.2)
+# Modo real (requiere el controlador FR5/AN5 en 192.168.58.2)
 docker compose --profile real up fr5-real
 ```
 
-El modo real tambien se puede correr como contenedores separados por
-nodo, igual al esquema de una terminal por nodo de la seccion 1 — un
-`docker compose run` por nodo en vez del contenedor unico bundleado de
-`fr5-sim`:
-
-```bash
-docker compose --profile real run --rm --name an5_ros2_cmd_server fr5-real \
-    ros2 run fr_ros2 ros2_cmd_server
-
-docker compose --profile real run --rm --name an5_rosbridge fr5-real \
-    ros2 launch rosbridge_server rosbridge_websocket_launch.xml
-
-docker compose --profile real run --rm --name an5_publisher_subscriber fr5-real \
-    ros2 run code publisher_subscriber
-
-# opcional: ver los comandos que manda Unity
-docker compose --profile real run --rm --name an5_api_command_echo fr5-real \
-    ros2 topic echo /api_command
-```
-
-`setup_an5_robot_windows.sh` automatiza la apertura de estos 4 nodos
-como ventanas `gnome-terminal` separadas, cada una corriendo via
-`docker compose run` en vez de una instalacion nativa.
-
 Ver [`DOCKER.md`](DOCKER.md) para notas de red (`network_mode: host` vs.
-Docker Desktop), como pasar argumentos de launch con
-`docker compose run`, e instrucciones de rebuild.
+Docker Desktop), correr el modo real como contenedores separados por
+nodo (lo que automatiza `setup_an5_robot_windows.sh`), pasar argumentos
+de launch con `docker compose run`, e instrucciones de rebuild.
