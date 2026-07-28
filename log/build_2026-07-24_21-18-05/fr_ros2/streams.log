@@ -1,0 +1,166 @@
+[0.008s] Invoking command in '/home/mooz/ros2_ws/build/fr_ros2': AMENT_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mooz/ros2_ws/install/frhal_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mooz/ros2_ws/src/fr_ros2 -DCMAKE_INSTALL_PREFIX=/home/mooz/ros2_ws/install/fr_ros2
+[0.073s] -- The C compiler identification is GNU 11.4.0
+[0.137s] -- The CXX compiler identification is GNU 11.4.0
+[0.142s] -- Detecting C compiler ABI info
+[0.205s] -- Detecting C compiler ABI info - done
+[0.212s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.212s] -- Detecting C compile features
+[0.213s] -- Detecting C compile features - done
+[0.215s] -- Detecting CXX compiler ABI info
+[0.276s] -- Detecting CXX compiler ABI info - done
+[0.281s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.281s] -- Detecting CXX compile features
+[0.281s] -- Detecting CXX compile features - done
+[0.283s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.387s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.445s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.473s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.476s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.481s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.488s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.498s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.530s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.532s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.596s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.615s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.641s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.648s] -- Looking for pthread.h
+[0.705s] -- Looking for pthread.h - found
+[0.705s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.771s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.772s] -- Found Threads: TRUE  
+[0.817s] -- Found frhal_msgs: 0.0.0 (/home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake)
+[0.824s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.876s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.876s] -- Configured cppcheck include dirs: /home/mooz/ros2_ws/src/fr_ros2/include/fr_ros2;/home/mooz/ros2_ws/src/fr_ros2/examples/include
+[0.876s] -- Configured cppcheck exclude dirs and/or files: 
+[0.877s] -- Added test 'lint_cmake' to check CMake code style
+[0.878s] -- Added test 'uncrustify' to check C / C++ code style
+[0.878s] -- Configured uncrustify additional arguments: 
+[0.878s] -- Added test 'xmllint' to check XML markup files
+[0.879s] -- Configuring done
+[0.886s] -- Generating done
+[0.889s] -- Build files have been written to: /home/mooz/ros2_ws/build/fr_ros2
+[0.895s] Invoked command in '/home/mooz/ros2_ws/build/fr_ros2' returned '0': AMENT_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mooz/ros2_ws/install/frhal_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mooz/ros2_ws/src/fr_ros2 -DCMAKE_INSTALL_PREFIX=/home/mooz/ros2_ws/install/fr_ros2
+[0.897s] Invoking command in '/home/mooz/ros2_ws/build/fr_ros2': AMENT_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mooz/ros2_ws/install/frhal_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mooz/ros2_ws/build/fr_ros2 -- -j8 -l8
+[0.940s] [ 25%] [32mBuilding CXX object CMakeFiles/ros2_cmd_server.dir/src/state_feedback.cpp.o[0m
+[0.940s] [ 25%] [32mBuilding CXX object CMakeFiles/srv_test_client.dir/examples/src/main.cpp.o[0m
+[0.940s] [ 50%] [32mBuilding CXX object CMakeFiles/srv_test_client.dir/examples/src/srv_test_client.cpp.o[0m
+[0.940s] [ 50%] [32mBuilding CXX object CMakeFiles/ros2_cmd_server.dir/src/ROS_API.cpp.o[0m
+[0.940s] [ 62%] [32mBuilding CXX object CMakeFiles/ros2_cmd_server.dir/src/global_val.cpp.o[0m
+[0.940s] [ 75%] [32mBuilding CXX object CMakeFiles/ros2_cmd_server.dir/src/main.cpp.o[0m
+[1.169s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:297:114:[m[K [01;35m[Kwarning: [m[Kbackslash and newline separated by space
+[1.170s]   297 | (const std::shared_ptr<frhal_msgs::srv::ROSCmdInterface::Request> req,\
+[1.170s]       |                                                                        
+[1.170s] 
+[3.077s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:[m[K In constructor ‘[01m[KROS_API::ROS_API(std::string)[m[K’:
+[3.077s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:52:56:[m[K [01;35m[Kwarning: [m[Kunsigned conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kunsigned char[m[K’ changes value from ‘[01m[K30000[m[K’ to ‘[01m[K48[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+[3.078s]    52 |     this->declare_parameter<uint8_t>("gripper_maxtime",[01;35m[K30000[m[K);
+[3.078s]       |                                                        [01;35m[K^~~~~[m[K
+[3.114s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:[m[K In member function ‘[01m[Kint ROS_API::_def_jnt_position(std::string)[m[K’:
+[3.114s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:350:16:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<JointPos>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.114s]   350 |         if([01;35m[Kidx > _cmd_jnt_pos_list.size()+1[m[K || idx <= 0){//如果大于当前容器最大值+1,那么要报错，因为序列容器中间无法留空
+[3.114s]       |            [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.114s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:353:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<JointPos>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.114s]   353 |         }else if([01;35m[Kidx <= _cmd_jnt_pos_list.size()[m[K){//如果是小于等于当前的容量，那么就是点位信息覆盖
+[3.115s]       |                  [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.115s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:358:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<JointPos>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.115s]   358 |         }else if([01;35m[Kidx == _cmd_jnt_pos_list.size()+1[m[K){//添加元素
+[3.115s]       |                  [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.116s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:[m[K In member function ‘[01m[Kint ROS_API::_def_cart_position(std::string)[m[K’:
+[3.116s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:393:16:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DescPose>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.117s]   393 |         if([01;35m[Kidx > _cmd_cart_pos_list.size()+1[m[K || idx <= 0){//如果大于当前容器最大值+1,那么要报错，因为序列容器中间无法留空
+[3.117s]       |            [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.117s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:396:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DescPose>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.117s]   396 |         }else if([01;35m[Kidx <= _cmd_cart_pos_list.size()[m[K){//如果是小于等于当前的容量，那么就是点位信息覆盖
+[3.117s]       |                  [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.117s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:403:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DescPose>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.117s]   403 |         }else if([01;35m[Kidx == _cmd_cart_pos_list.size()+1[m[K){//添加元素
+[3.117s]       |                  [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.118s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:[m[K In member function ‘[01m[Kstd::string ROS_API::_get_variable(std::string)[m[K’:
+[3.119s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:426:20:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<JointPos>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.119s]   426 |             if([01;35m[Kidx <= _cmd_jnt_pos_list.size()[m[K && idx > 0){
+[3.119s]       |                [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.119s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:440:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DescPose>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.120s]   440 |                 if([01;35m[Kidx <= _cmd_cart_pos_list.size()[m[K && idx > 0){
+[3.120s]       |                    [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.128s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:[m[K In member function ‘[01m[Kint ROS_API::MoveJ(std::string)[m[K’:
+[3.128s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:700:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<JointPos>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.128s]   700 |         if([01;35m[Kindex > _cmd_jnt_pos_list.size()[m[K){
+[3.128s]       |            [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.130s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:742:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DescPose>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.130s]   742 |         if([01;35m[Kindex > _cmd_cart_pos_list.size()[m[K){
+[3.130s]       |            [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.135s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:[m[K In member function ‘[01m[Kint ROS_API::MoveL(std::string)[m[K’:
+[3.135s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:818:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<JointPos>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.136s]   818 |         if([01;35m[Kindex > _cmd_jnt_pos_list.size()[m[K){
+[3.136s]       |            [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.137s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:854:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DescPose>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.138s]   854 |         if([01;35m[Kindex > _cmd_cart_pos_list.size()[m[K){
+[3.138s]       |            [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.143s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:[m[K In member function ‘[01m[Kint ROS_API::MoveC(std::string)[m[K’:
+[3.143s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:930:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<JointPos>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.143s]   930 |         if([01;35m[Kindex > _cmd_jnt_pos_list.size()[m[K || index2 > _cmd_jnt_pos_list.size()){
+[3.143s]       |            [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.143s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:930:55:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<JointPos>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.143s]   930 |         if(index > _cmd_jnt_pos_list.size() || [01;35m[Kindex2 > _cmd_jnt_pos_list.size()[m[K){
+[3.143s]       |                                                [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.146s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:986:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DescPose>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.146s]   986 |         if([01;35m[Kindex > _cmd_cart_pos_list.size()[m[K || index2 > _cmd_cart_pos_list.size()){
+[3.146s]       |            [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.146s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:986:56:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DescPose>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.146s]   986 |         if(index > _cmd_cart_pos_list.size() || [01;35m[Kindex2 > _cmd_cart_pos_list.size()[m[K){
+[3.146s]       |                                                 [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.152s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:[m[K In member function ‘[01m[Kint ROS_API::Circle(std::string)[m[K’:
+[3.152s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:1057:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpara[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.152s]  1057 | int ROS_API::Circle([01;35m[Kstd::string para[m[K){
+[3.152s]       |                     [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[3.153s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:[m[K In member function ‘[01m[Kint ROS_API::SplinePTP(std::string)[m[K’:
+[3.153s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:1109:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<JointPos>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.153s]  1109 |         if([01;35m[Kindex > _cmd_jnt_pos_list.size()[m[K){
+[3.153s]       |            [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.156s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:[m[K In member function ‘[01m[Kint ROS_API::NewSplinePoint(std::string)[m[K’:
+[3.156s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:1175:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DescPose>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.156s]  1175 |         if([01;35m[Kindex > _cmd_cart_pos_list.size()[m[K){
+[3.156s]       |            [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.843s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/examples/src/srv_test_client.cpp:[m[K In constructor ‘[01m[Ksrv_test_node::srv_test_node(std::string)[m[K’:
+[3.843s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/examples/src/srv_test_client.cpp:5:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcount[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.843s]     5 |     static int [01;35m[Kcount[m[K = 0;
+[3.843s]       |                [01;35m[K^~~~~[m[K
+[4.038s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:[m[K In member function ‘[01m[Kint ROS_API::_send_data_factory_callback(std::string)[m[K’:
+[4.038s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:261:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[4.038s]   261 | [01;35m[K}[m[K
+[4.038s]       | [01;35m[K^[m[K
+[4.105s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:[m[K In member function ‘[01m[Kstd::string ROS_API::_get_variable(std::string)[m[K’:
+[4.105s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:460:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[4.105s]   460 | [01;35m[K}[m[K
+[4.105s]       | [01;35m[K^[m[K
+[4.362s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/examples/src/srv_test_client.cpp:[m[K At global scope:
+[4.362s] [01m[K/home/mooz/ros2_ws/src/fr_ros2/examples/src/srv_test_client.cpp:5:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcount[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.890s] [ 87%] [32m[1mLinking CXX executable srv_test_client[0m
+[5.029s] [ 87%] Built target srv_test_client
+[6.124s] [100%] [32m[1mLinking CXX executable ros2_cmd_server[0m
+[6.332s] [100%] Built target ros2_cmd_server
+[6.340s] Invoked command in '/home/mooz/ros2_ws/build/fr_ros2' returned '0': AMENT_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mooz/ros2_ws/install/frhal_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mooz/ros2_ws/build/fr_ros2 -- -j8 -l8
+[6.348s] Invoking command in '/home/mooz/ros2_ws/build/fr_ros2': AMENT_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mooz/ros2_ws/install/frhal_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mooz/ros2_ws/build/fr_ros2
+[6.353s] -- Install configuration: ""
+[6.353s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/lib/fr_ros2/ros2_cmd_server
+[6.354s] -- Set runtime path of "/home/mooz/ros2_ws/install/fr_ros2/lib/fr_ros2/ros2_cmd_server" to ""
+[6.355s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/lib/fr_ros2/srv_test_client
+[6.355s] -- Set runtime path of "/home/mooz/ros2_ws/install/fr_ros2/lib/fr_ros2/srv_test_client" to ""
+[6.355s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/ament_index/resource_index/package_run_dependencies/fr_ros2
+[6.355s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/ament_index/resource_index/parent_prefix_path/fr_ros2
+[6.355s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/environment/ament_prefix_path.sh
+[6.355s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/environment/ament_prefix_path.dsv
+[6.355s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/environment/path.sh
+[6.355s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/environment/path.dsv
+[6.356s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/local_setup.bash
+[6.356s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/local_setup.sh
+[6.356s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/local_setup.zsh
+[6.356s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/local_setup.dsv
+[6.356s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/package.dsv
+[6.356s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/ament_index/resource_index/packages/fr_ros2
+[6.356s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/cmake/fr_ros2Config.cmake
+[6.356s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/cmake/fr_ros2Config-version.cmake
+[6.356s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/package.xml
+[6.358s] Invoked command in '/home/mooz/ros2_ws/build/fr_ros2' returned '0': AMENT_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mooz/ros2_ws/install/frhal_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mooz/ros2_ws/build/fr_ros2

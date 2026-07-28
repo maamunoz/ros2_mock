@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "frhal_msgs__rs",
+		"source" : "/home/mooz/ros2_ws/build/frhal_msgs/frhal_msgs__rs"
+	}
+}

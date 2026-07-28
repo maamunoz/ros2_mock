@@ -1,0 +1,43 @@
+running egg_info
+creating ../../build/an5_mock_sim/an5_mock_sim.egg-info
+writing ../../build/an5_mock_sim/an5_mock_sim.egg-info/PKG-INFO
+writing dependency_links to ../../build/an5_mock_sim/an5_mock_sim.egg-info/dependency_links.txt
+writing entry points to ../../build/an5_mock_sim/an5_mock_sim.egg-info/entry_points.txt
+writing requirements to ../../build/an5_mock_sim/an5_mock_sim.egg-info/requires.txt
+writing top-level names to ../../build/an5_mock_sim/an5_mock_sim.egg-info/top_level.txt
+writing manifest file '../../build/an5_mock_sim/an5_mock_sim.egg-info/SOURCES.txt'
+reading manifest file '../../build/an5_mock_sim/an5_mock_sim.egg-info/SOURCES.txt'
+writing manifest file '../../build/an5_mock_sim/an5_mock_sim.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/mooz/ros2_ws/build/an5_mock_sim/build
+creating /home/mooz/ros2_ws/build/an5_mock_sim/build/lib
+creating /home/mooz/ros2_ws/build/an5_mock_sim/build/lib/an5_mock_sim
+copying an5_mock_sim/__init__.py -> /home/mooz/ros2_ws/build/an5_mock_sim/build/lib/an5_mock_sim
+copying an5_mock_sim/mock_cmd_server.py -> /home/mooz/ros2_ws/build/an5_mock_sim/build/lib/an5_mock_sim
+running install
+running install_lib
+creating /home/mooz/ros2_ws/install/an5_mock_sim/lib/python3.10/site-packages/an5_mock_sim
+copying /home/mooz/ros2_ws/build/an5_mock_sim/build/lib/an5_mock_sim/__init__.py -> /home/mooz/ros2_ws/install/an5_mock_sim/lib/python3.10/site-packages/an5_mock_sim
+copying /home/mooz/ros2_ws/build/an5_mock_sim/build/lib/an5_mock_sim/mock_cmd_server.py -> /home/mooz/ros2_ws/install/an5_mock_sim/lib/python3.10/site-packages/an5_mock_sim
+byte-compiling /home/mooz/ros2_ws/install/an5_mock_sim/lib/python3.10/site-packages/an5_mock_sim/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/mooz/ros2_ws/install/an5_mock_sim/lib/python3.10/site-packages/an5_mock_sim/mock_cmd_server.py to mock_cmd_server.cpython-310.pyc
+running install_data
+creating /home/mooz/ros2_ws/install/an5_mock_sim/share/ament_index
+creating /home/mooz/ros2_ws/install/an5_mock_sim/share/ament_index/resource_index
+creating /home/mooz/ros2_ws/install/an5_mock_sim/share/ament_index/resource_index/packages
+copying resource/an5_mock_sim -> /home/mooz/ros2_ws/install/an5_mock_sim/share/ament_index/resource_index/packages
+copying package.xml -> /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim
+creating /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/launch
+copying launch/sim.launch.py -> /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/launch
+copying launch/real.launch.py -> /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/launch
+creating /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/scripts
+copying scripts/disable_robot_ip_alias.sh -> /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/scripts
+copying scripts/enable_robot_ip_alias.sh -> /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/scripts
+copying scripts/reject_robot_xmlrpc.sh -> /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/scripts
+copying scripts/disable_reject_robot_xmlrpc.sh -> /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/scripts
+running install_egg_info
+Copying ../../build/an5_mock_sim/an5_mock_sim.egg-info to /home/mooz/ros2_ws/install/an5_mock_sim/lib/python3.10/site-packages/an5_mock_sim-0.0.1-py3.10.egg-info
+running install_scripts
+Installing mock_cmd_server script to /home/mooz/ros2_ws/install/an5_mock_sim/lib/an5_mock_sim
+writing list of installed files to '/home/mooz/ros2_ws/build/an5_mock_sim/install.log'

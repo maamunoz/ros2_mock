@@ -1,0 +1,334 @@
+[0.000000] (-) TimerEvent: {}
+[0.000209] (-) JobUnselected: {'identifier': 'code'}
+[0.000231] (-) JobUnselected: {'identifier': 'fr_ros2'}
+[0.000244] (frhal_msgs) JobQueued: {'identifier': 'frhal_msgs', 'dependencies': OrderedDict()}
+[0.000472] (frhal_msgs) JobStarted: {'identifier': 'frhal_msgs'}
+[0.006597] (frhal_msgs) JobProgress: {'identifier': 'frhal_msgs', 'progress': 'cmake'}
+[0.006849] (frhal_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/mooz/ros2_ws/src/frhal_msgs', '-DCMAKE_INSTALL_PREFIX=/home/mooz/ros2_ws/install/frhal_msgs'], 'cwd': '/home/mooz/ros2_ws/build/frhal_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mooz'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mooz'), ('OLDPWD', '/home/mooz/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('SYSTEMD_EXEC_PID', '1970'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mooz'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mooz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mooz-14ITL05:@/tmp/.ICE-unix/1785,unix/mooz-14ITL05:/tmp/.ICE-unix/1785'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c698c9af_9687_425f_8d44_b2fbca78e356'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AF4CT3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mooz/ros2_ws/build/frhal_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099947] (-) TimerEvent: {}
+[0.112668] (frhal_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.200119] (-) TimerEvent: {}
+[0.200557] (frhal_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.207080] (frhal_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.262511] (frhal_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.267890] (frhal_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.268182] (frhal_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.268669] (frhal_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.271035] (frhal_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300220] (-) TimerEvent: {}
+[0.327115] (frhal_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.332309] (frhal_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.332523] (frhal_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.332938] (frhal_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.336752] (frhal_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400370] (-) TimerEvent: {}
+[0.439389] (frhal_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500515] (-) TimerEvent: {}
+[0.500724] (frhal_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.502980] (frhal_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.507486] (frhal_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.537906] (frhal_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600689] (-) TimerEvent: {}
+[0.700938] (-) TimerEvent: {}
+[0.738318] (frhal_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.801121] (-) TimerEvent: {}
+[0.864638] (frhal_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.901319] (-) TimerEvent: {}
+[1.001567] (-) TimerEvent: {}
+[1.028837] (frhal_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.045326] (frhal_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.046356] (frhal_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.065173] (frhal_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.065336] (frhal_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.065379] (frhal_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.065417] (frhal_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.080126] (frhal_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.101748] (-) TimerEvent: {}
+[1.142397] (frhal_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.159212] (frhal_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.159919] (frhal_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.161478] (frhal_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.179792] (frhal_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.186204] (frhal_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/mooz/ros2_ws/build/frhal_msgs\n'}
+[1.192154] (frhal_msgs) CommandEnded: {'returncode': 0}
+[1.192967] (frhal_msgs) JobProgress: {'identifier': 'frhal_msgs', 'progress': 'build'}
+[1.192989] (frhal_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mooz/ros2_ws/build/frhal_msgs', '--', '-j8', '-l8'], 'cwd': '/home/mooz/ros2_ws/build/frhal_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mooz'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mooz'), ('OLDPWD', '/home/mooz/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('SYSTEMD_EXEC_PID', '1970'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mooz'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mooz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mooz-14ITL05:@/tmp/.ICE-unix/1785,unix/mooz-14ITL05:/tmp/.ICE-unix/1785'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c698c9af_9687_425f_8d44_b2fbca78e356'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AF4CT3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mooz/ros2_ws/build/frhal_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.201854] (-) TimerEvent: {}
+[1.220551] (frhal_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.227419] (frhal_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.227616] (frhal_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[1.235946] (frhal_msgs) StdoutLine: {'line': b'[  7%] Built target ament_cmake_python_copy_frhal_msgs\n'}
+[1.301972] (-) TimerEvent: {}
+[1.402277] (-) TimerEvent: {}
+[1.410627] (frhal_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.411063] (frhal_msgs) StdoutLine: {'line': b'creating frhal_msgs.egg-info\n'}
+[1.411195] (frhal_msgs) StdoutLine: {'line': b'writing frhal_msgs.egg-info/PKG-INFO\n'}
+[1.411328] (frhal_msgs) StdoutLine: {'line': b'writing dependency_links to frhal_msgs.egg-info/dependency_links.txt\n'}
+[1.411430] (frhal_msgs) StdoutLine: {'line': b'writing top-level names to frhal_msgs.egg-info/top_level.txt\n'}
+[1.411588] (frhal_msgs) StdoutLine: {'line': b"writing manifest file 'frhal_msgs.egg-info/SOURCES.txt'\n"}
+[1.413309] (frhal_msgs) StdoutLine: {'line': b"reading manifest file 'frhal_msgs.egg-info/SOURCES.txt'\n"}
+[1.413671] (frhal_msgs) StdoutLine: {'line': b"writing manifest file 'frhal_msgs.egg-info/SOURCES.txt'\n"}
+[1.435252] (frhal_msgs) StdoutLine: {'line': b'[  7%] Built target ament_cmake_python_build_frhal_msgs_egg\n'}
+[1.495666] (frhal_msgs) StdoutLine: {'line': b'[  7%] Built target frhal_msgs__rs\n'}
+[1.502363] (-) TimerEvent: {}
+[1.553264] (frhal_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/frhal_msgs__rosidl_generator_c.dir/rosidl_generator_c/frhal_msgs/srv/detail/ros_cmd_interface__functions.c.o\x1b[0m\n'}
+[1.553444] (frhal_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/frhal_msgs__rosidl_generator_c.dir/rosidl_generator_c/frhal_msgs/msg/detail/fr_state__functions.c.o\x1b[0m\n'}
+[1.558681] (frhal_msgs) StdoutLine: {'line': b'[ 12%] Built target frhal_msgs__cpp\n'}
+[1.566077] (frhal_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.566378] (frhal_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.567201] (frhal_msgs) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.602469] (-) TimerEvent: {}
+[1.609329] (frhal_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libfrhal_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.637213] (frhal_msgs) StdoutLine: {'line': b'[ 22%] Built target frhal_msgs__rosidl_generator_c\n'}
+[1.645823] (frhal_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.646754] (frhal_msgs) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.646895] (frhal_msgs) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.702566] (-) TimerEvent: {}
+[1.802859] (-) TimerEvent: {}
+[1.831296] (frhal_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/frhal_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/frhal_msgs/msg/fr_state__type_support.cpp.o\x1b[0m\n'}
+[1.831497] (frhal_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/frhal_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/frhal_msgs/srv/ros_cmd_interface__type_support.cpp.o\x1b[0m\n'}
+[1.878285] (frhal_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/frhal_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/frhal_msgs/srv/detail/ros_cmd_interface__type_support.cpp.o\x1b[0m\n'}
+[1.885622] (frhal_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/frhal_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/frhal_msgs/msg/detail/fr_state__type_support.cpp.o\x1b[0m\n'}
+[1.906246] (-) TimerEvent: {}
+[2.006566] (-) TimerEvent: {}
+[2.106916] (-) TimerEvent: {}
+[2.135265] (frhal_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/frhal_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/frhal_msgs/srv/detail/dds_fastrtps/ros_cmd_interface__type_support.cpp.o\x1b[0m\n'}
+[2.144870] (frhal_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/frhal_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/frhal_msgs/srv/ros_cmd_interface__type_support.cpp.o\x1b[0m\n'}
+[2.180561] (frhal_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/frhal_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/frhal_msgs/msg/fr_state__type_support.cpp.o\x1b[0m\n'}
+[2.181139] (frhal_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/frhal_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/frhal_msgs/msg/detail/dds_fastrtps/fr_state__type_support.cpp.o\x1b[0m\n'}
+[2.191818] (frhal_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/frhal_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/frhal_msgs/srv/detail/ros_cmd_interface__type_support.c.o\x1b[0m\n'}
+[2.197377] (frhal_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libfrhal_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.207045] (-) TimerEvent: {}
+[2.216273] (frhal_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libfrhal_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.223054] (frhal_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/frhal_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/frhal_msgs/srv/detail/ros_cmd_interface__type_support_c.cpp.o\x1b[0m\n'}
+[2.232215] (frhal_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/frhal_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/frhal_msgs/msg/detail/fr_state__type_support.c.o\x1b[0m\n'}
+[2.250314] (frhal_msgs) StdoutLine: {'line': b'[ 62%] Built target frhal_msgs__rosidl_typesupport_cpp\n'}
+[2.269347] (frhal_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/frhal_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/frhal_msgs/msg/detail/fr_state__type_support_c.cpp.o\x1b[0m\n'}
+[2.274423] (frhal_msgs) StdoutLine: {'line': b'[ 65%] Built target frhal_msgs__rosidl_typesupport_c\n'}
+[2.278423] (frhal_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking C shared library libfrhal_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.307203] (-) TimerEvent: {}
+[2.310288] (frhal_msgs) StdoutLine: {'line': b'[ 67%] Built target frhal_msgs__rosidl_typesupport_introspection_c\n'}
+[2.334333] (frhal_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libfrhal_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.384247] (frhal_msgs) StdoutLine: {'line': b'[ 70%] Built target frhal_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.407272] (-) TimerEvent: {}
+[2.507545] (-) TimerEvent: {}
+[2.514257] (frhal_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libfrhal_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.574285] (frhal_msgs) StdoutLine: {'line': b'[ 72%] Built target frhal_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.591711] (frhal_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libfrhal_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.607664] (-) TimerEvent: {}
+[2.644109] (frhal_msgs) StdoutLine: {'line': b'[ 75%] Built target frhal_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.658166] (frhal_msgs) StdoutLine: {'line': b'[ 75%] Built target frhal_msgs\n'}
+[2.673660] (frhal_msgs) StdoutLine: {'line': b'[ 77%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.707779] (-) TimerEvent: {}
+[2.808032] (-) TimerEvent: {}
+[2.908326] (-) TimerEvent: {}
+[3.008649] (-) TimerEvent: {}
+[3.108913] (-) TimerEvent: {}
+[3.137221] (frhal_msgs) StdoutLine: {'line': b'[ 77%] Built target frhal_msgs__py\n'}
+[3.151684] (frhal_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/frhal_msgs__rosidl_generator_py.dir/rosidl_generator_py/frhal_msgs/msg/_fr_state_s.c.o\x1b[0m\n'}
+[3.151867] (frhal_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/frhal_msgs__rosidl_generator_py.dir/rosidl_generator_py/frhal_msgs/srv/_ros_cmd_interface_s.c.o\x1b[0m\n'}
+[3.209026] (-) TimerEvent: {}
+[3.254096] (frhal_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/frhal_msgs/libfrhal_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[3.283638] (frhal_msgs) StdoutLine: {'line': b'[ 85%] Built target frhal_msgs__rosidl_generator_py\n'}
+[3.298331] (frhal_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/frhal_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/frhal_msgs/_frhal_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.298520] (frhal_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/frhal_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/frhal_msgs/_frhal_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.298588] (frhal_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/frhal_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/frhal_msgs/_frhal_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.309267] (-) TimerEvent: {}
+[3.371093] (frhal_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/frhal_msgs/frhal_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.371248] (frhal_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/frhal_msgs/frhal_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.371391] (frhal_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/frhal_msgs/frhal_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.395180] (frhal_msgs) StdoutLine: {'line': b'[100%] Built target frhal_msgs__rosidl_typesupport_c__pyext\n'}
+[3.395330] (frhal_msgs) StdoutLine: {'line': b'[100%] Built target frhal_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.395377] (frhal_msgs) StdoutLine: {'line': b'[100%] Built target frhal_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.403605] (frhal_msgs) CommandEnded: {'returncode': 0}
+[3.404078] (frhal_msgs) JobProgress: {'identifier': 'frhal_msgs', 'progress': 'install'}
+[3.409325] (-) TimerEvent: {}
+[3.410114] (frhal_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mooz/ros2_ws/build/frhal_msgs'], 'cwd': '/home/mooz/ros2_ws/build/frhal_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mooz'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mooz'), ('OLDPWD', '/home/mooz/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('SYSTEMD_EXEC_PID', '1970'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mooz'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mooz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mooz-14ITL05:@/tmp/.ICE-unix/1785,unix/mooz-14ITL05:/tmp/.ICE-unix/1785'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c698c9af_9687_425f_8d44_b2fbca78e356'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AF4CT3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mooz/ros2_ws/build/frhal_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.415832] (frhal_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.415979] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/ament_index/resource_index/rosidl_interfaces/frhal_msgs\n'}
+[3.416052] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs\n'}
+[3.416134] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv\n'}
+[3.416190] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail\n'}
+[3.416257] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/ros_cmd_interface__type_support.h\n'}
+[3.416327] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/ros_cmd_interface__functions.c\n'}
+[3.416377] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/ros_cmd_interface__struct.h\n'}
+[3.416445] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/ros_cmd_interface__functions.h\n'}
+[3.416495] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/ros_cmd_interface.h\n'}
+[3.416569] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg\n'}
+[3.416619] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail\n'}
+[3.416668] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/fr_state__functions.h\n'}
+[3.416742] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/fr_state__functions.c\n'}
+[3.416783] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/fr_state__struct.h\n'}
+[3.416821] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/fr_state__type_support.h\n'}
+[3.416858] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/fr_state.h\n'}
+[3.416909] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.416945] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/environment/library_path.sh\n'}
+[3.416989] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/environment/library_path.dsv\n'}
+[3.417054] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_generator_c.so\n'}
+[3.417260] (frhal_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_generator_c.so" to ""\n'}
+[3.417325] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs\n'}
+[3.417365] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv\n'}
+[3.417404] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail\n'}
+[3.417465] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/ros_cmd_interface__rosidl_typesupport_fastrtps_c.h\n'}
+[3.417506] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg\n'}
+[3.417544] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail\n'}
+[3.417581] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/fr_state__rosidl_typesupport_fastrtps_c.h\n'}
+[3.417633] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.417668] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[3.417747] (frhal_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.417806] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs\n'}
+[3.417846] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv\n'}
+[3.417885] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail\n'}
+[3.417943] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/ros_cmd_interface__type_support.c\n'}
+[3.417995] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/ros_cmd_interface__rosidl_typesupport_introspection_c.h\n'}
+[3.418033] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg\n'}
+[3.418071] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.418129] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail\n'}
+[3.418167] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/fr_state__type_support.c\n'}
+[3.418228] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/fr_state__rosidl_typesupport_introspection_c.h\n'}
+[3.418265] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_typesupport_introspection_c.so\n'}
+[3.418464] (frhal_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.418515] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_typesupport_c.so\n'}
+[3.418647] (frhal_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_typesupport_c.so" to ""\n'}
+[3.418693] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs\n'}
+[3.418745] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv\n'}
+[3.418805] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail\n'}
+[3.418842] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/ros_cmd_interface__traits.hpp\n'}
+[3.418880] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/ros_cmd_interface__struct.hpp\n'}
+[3.418936] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/ros_cmd_interface__type_support.hpp\n'}
+[3.418987] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/ros_cmd_interface__builder.hpp\n'}
+[3.419026] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/ros_cmd_interface.hpp\n'}
+[3.419080] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg\n'}
+[3.419117] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail\n'}
+[3.419156] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/fr_state__traits.hpp\n'}
+[3.419222] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/fr_state__type_support.hpp\n'}
+[3.419261] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/fr_state__builder.hpp\n'}
+[3.419299] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/fr_state__struct.hpp\n'}
+[3.419354] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/fr_state.hpp\n'}
+[3.419393] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.419446] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs\n'}
+[3.419508] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv\n'}
+[3.419551] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail\n'}
+[3.419590] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/dds_fastrtps\n'}
+[3.419637] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/ros_cmd_interface__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.419714] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg\n'}
+[3.419822] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.419866] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail\n'}
+[3.419917] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/fr_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.419965] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/dds_fastrtps\n'}
+[3.420024] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.420091] (frhal_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.420131] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs\n'}
+[3.420194] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv\n'}
+[3.420271] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail\n'}
+[3.420309] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/ros_cmd_interface__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.420347] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/srv/detail/ros_cmd_interface__type_support.cpp\n'}
+[3.420412] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg\n'}
+[3.420450] (frhal_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail\n'}
+[3.420489] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/fr_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.420549] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/include/frhal_msgs/frhal_msgs/msg/detail/fr_state__type_support.cpp\n'}
+[3.420607] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[3.420787] (frhal_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.420846] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_typesupport_cpp.so\n'}
+[3.420991] (frhal_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[3.421050] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/environment/pythonpath.sh\n'}
+[3.421122] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/environment/pythonpath.dsv\n'}
+[3.421198] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs-0.0.0-py3.10.egg-info\n'}
+[3.421294] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.421358] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.421415] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.421477] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.421564] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs\n'}
+[3.421618] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/_frhal_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.421701] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/__init__.py\n'}
+[3.421756] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/frhal_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.421817] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/srv\n'}
+[3.421874] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/srv/_ros_cmd_interface.py\n'}
+[3.421933] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/srv/__init__.py\n'}
+[3.421994] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/srv/_ros_cmd_interface_s.c\n'}
+[3.422059] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/frhal_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.422132] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/_frhal_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[3.422204] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/frhal_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.422278] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/libfrhal_msgs__rosidl_generator_py.so\n'}
+[3.422357] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/msg\n'}
+[3.422412] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/msg/_fr_state_s.c\n'}
+[3.422483] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/msg/__init__.py\n'}
+[3.422542] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/msg/_fr_state.py\n'}
+[3.422643] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/_frhal_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.451901] (frhal_msgs) StdoutLine: {'line': b"Listing '/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs'...\n"}
+[3.452030] (frhal_msgs) StdoutLine: {'line': b"Compiling '/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/__init__.py'...\n"}
+[3.452070] (frhal_msgs) StdoutLine: {'line': b"Listing '/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/msg'...\n"}
+[3.452104] (frhal_msgs) StdoutLine: {'line': b"Compiling '/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/msg/__init__.py'...\n"}
+[3.452138] (frhal_msgs) StdoutLine: {'line': b"Compiling '/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/msg/_fr_state.py'...\n"}
+[3.452184] (frhal_msgs) StdoutLine: {'line': b"Listing '/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/srv'...\n"}
+[3.452238] (frhal_msgs) StdoutLine: {'line': b"Compiling '/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/srv/__init__.py'...\n"}
+[3.452274] (frhal_msgs) StdoutLine: {'line': b"Compiling '/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/srv/_ros_cmd_interface.py'...\n"}
+[3.455717] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/frhal_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.455954] (frhal_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/frhal_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.456008] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/frhal_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.456068] (frhal_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/frhal_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.456157] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/frhal_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.456381] (frhal_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages/frhal_msgs/frhal_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.456463] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_generator_py.so\n'}
+[3.456551] (frhal_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mooz/ros2_ws/install/frhal_msgs/lib/libfrhal_msgs__rosidl_generator_py.so" to ""\n'}
+[3.456649] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/ament_index/resource_index/rust_packages/frhal_msgs\n'}
+[3.456698] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/rust\n'}
+[3.456751] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/rust/build.rs\n'}
+[3.456803] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/rust/src\n'}
+[3.456853] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/rust/src/msg.rs\n'}
+[3.456903] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/rust/src/srv.rs\n'}
+[3.456953] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/rust/src/srv\n'}
+[3.457004] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/rust/src/srv/rmw.rs\n'}
+[3.457053] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/rust/src/lib.rs\n'}
+[3.457104] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/rust/src/msg\n'}
+[3.457156] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/rust/src/msg/rmw.rs\n'}
+[3.457209] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/rust/Cargo.toml\n'}
+[3.457282] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/srv/ROSCmdInterface.idl\n'}
+[3.457371] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/msg/FRState.idl\n'}
+[3.457441] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/srv/ROSCmdInterface.srv\n'}
+[3.457511] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/srv/ROSCmdInterface_Request.msg\n'}
+[3.457580] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/srv/ROSCmdInterface_Response.msg\n'}
+[3.457652] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/msg/FRState.msg\n'}
+[3.457746] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/ament_index/resource_index/package_run_dependencies/frhal_msgs\n'}
+[3.457840] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/ament_index/resource_index/parent_prefix_path/frhal_msgs\n'}
+[3.457914] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/environment/ament_prefix_path.sh\n'}
+[3.457984] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/environment/ament_prefix_path.dsv\n'}
+[3.458053] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/environment/path.sh\n'}
+[3.458119] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/environment/path.dsv\n'}
+[3.458190] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/local_setup.bash\n'}
+[3.458257] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/local_setup.sh\n'}
+[3.458327] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/local_setup.zsh\n'}
+[3.458394] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/local_setup.dsv\n'}
+[3.458459] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/package.dsv\n'}
+[3.458551] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/ament_index/resource_index/packages/frhal_msgs\n'}
+[3.458652] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/export_frhal_msgs__rosidl_generator_cExport.cmake\n'}
+[3.458731] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/export_frhal_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.458812] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/export_frhal_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.458884] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/export_frhal_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.458966] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/frhal_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.459038] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/frhal_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.459114] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/frhal_msgs__rosidl_typesupport_cExport.cmake\n'}
+[3.459193] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/frhal_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.459271] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/export_frhal_msgs__rosidl_generator_cppExport.cmake\n'}
+[3.459348] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/export_frhal_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.459423] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/export_frhal_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.459499] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/frhal_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.459571] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/frhal_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.459648] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/frhal_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[3.459728] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/frhal_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.459805] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/export_frhal_msgs__rosidl_generator_pyExport.cmake\n'}
+[3.459877] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/export_frhal_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.459950] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[3.460022] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.460094] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.460166] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.460240] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.460308] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.460379] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.460447] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[3.460517] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/frhal_msgsConfig.cmake\n'}
+[3.460573] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/cmake/frhal_msgsConfig-version.cmake\n'}
+[3.460640] (frhal_msgs) StdoutLine: {'line': b'-- Installing: /home/mooz/ros2_ws/install/frhal_msgs/share/frhal_msgs/package.xml\n'}
+[3.462453] (frhal_msgs) CommandEnded: {'returncode': 0}
+[3.478979] (frhal_msgs) JobEnded: {'identifier': 'frhal_msgs', 'rc': 0}
+[3.479373] (-) EventReactorShutdown: {}

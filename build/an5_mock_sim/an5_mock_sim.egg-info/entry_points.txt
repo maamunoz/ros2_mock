@@ -1,0 +1,3 @@
+[console_scripts]
+mock_cmd_server = an5_mock_sim.mock_cmd_server:main
+

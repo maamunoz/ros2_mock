@@ -1,0 +1,6 @@
+Invoking command in '/home/mooz/ros2_ws/build/frhal_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mooz/ros2_ws/src/frhal_msgs -DCMAKE_INSTALL_PREFIX=/home/mooz/ros2_ws/install/frhal_msgs
+Invoked command in '/home/mooz/ros2_ws/build/frhal_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mooz/ros2_ws/src/frhal_msgs -DCMAKE_INSTALL_PREFIX=/home/mooz/ros2_ws/install/frhal_msgs
+Invoking command in '/home/mooz/ros2_ws/build/frhal_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mooz/ros2_ws/build/frhal_msgs -- -j8 -l8
+Invoked command in '/home/mooz/ros2_ws/build/frhal_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mooz/ros2_ws/build/frhal_msgs -- -j8 -l8
+Invoking command in '/home/mooz/ros2_ws/build/frhal_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mooz/ros2_ws/build/frhal_msgs
+Invoked command in '/home/mooz/ros2_ws/build/frhal_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mooz/ros2_ws/build/frhal_msgs

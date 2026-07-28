@@ -1,0 +1,17 @@
+/home/mooz/ros2_ws/install/fr_ros2/lib/fr_ros2/ros2_cmd_server
+/home/mooz/ros2_ws/install/fr_ros2/lib/fr_ros2/srv_test_client
+/home/mooz/ros2_ws/install/fr_ros2/share/ament_index/resource_index/package_run_dependencies/fr_ros2
+/home/mooz/ros2_ws/install/fr_ros2/share/ament_index/resource_index/parent_prefix_path/fr_ros2
+/home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/environment/ament_prefix_path.sh
+/home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/environment/ament_prefix_path.dsv
+/home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/environment/path.sh
+/home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/environment/path.dsv
+/home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/local_setup.bash
+/home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/local_setup.sh
+/home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/local_setup.zsh
+/home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/local_setup.dsv
+/home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/package.dsv
+/home/mooz/ros2_ws/install/fr_ros2/share/ament_index/resource_index/packages/fr_ros2
+/home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/cmake/fr_ros2Config.cmake
+/home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/cmake/fr_ros2Config-version.cmake
+/home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/package.xml

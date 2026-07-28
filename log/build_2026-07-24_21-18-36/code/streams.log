@@ -1,0 +1,40 @@
+[0.412s] Invoking command in '/home/mooz/ros2_ws/src/code': AMENT_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs LD_LIBRARY_PATH=/home/mooz/ros2_ws/install/frhal_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mooz/ros2_ws/build/code/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mooz/ros2_ws/install/code/lib/python3.10/site-packages:/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/code build --build-base /home/mooz/ros2_ws/build/code/build install --record /home/mooz/ros2_ws/build/code/install.log --install-scripts $base/lib/code --single-version-externally-managed install_data
+[0.561s] running egg_info
+[0.561s] creating ../../build/code/code.egg-info
+[0.561s] writing ../../build/code/code.egg-info/PKG-INFO
+[0.561s] writing dependency_links to ../../build/code/code.egg-info/dependency_links.txt
+[0.561s] writing entry points to ../../build/code/code.egg-info/entry_points.txt
+[0.561s] writing requirements to ../../build/code/code.egg-info/requires.txt
+[0.561s] writing top-level names to ../../build/code/code.egg-info/top_level.txt
+[0.561s] writing manifest file '../../build/code/code.egg-info/SOURCES.txt'
+[0.562s] reading manifest file '../../build/code/code.egg-info/SOURCES.txt'
+[0.562s] writing manifest file '../../build/code/code.egg-info/SOURCES.txt'
+[0.562s] running build
+[0.562s] running install
+[0.563s] running install_data
+[0.563s] creating /home/mooz/ros2_ws/install/code/share/ament_index
+[0.563s] creating /home/mooz/ros2_ws/install/code/share/ament_index/resource_index
+[0.563s] creating /home/mooz/ros2_ws/install/code/share/ament_index/resource_index/packages
+[0.563s] copying resource/code -> /home/mooz/ros2_ws/install/code/share/ament_index/resource_index/packages
+[0.563s] copying package.xml -> /home/mooz/ros2_ws/install/code/share/code
+[0.563s] running install_egg_info
+[0.565s] Copying ../../build/code/code.egg-info to /home/mooz/ros2_ws/install/code/lib/python3.10/site-packages/code-0.0.0-py3.10.egg-info
+[0.565s] running install_scripts
+[0.580s] Installing Inversa_suscriber script to /home/mooz/ros2_ws/install/code/lib/code
+[0.580s] Installing MoveL script to /home/mooz/ros2_ws/install/code/lib/code
+[0.580s] Installing Publicador_Subscritor script to /home/mooz/ros2_ws/install/code/lib/code
+[0.580s] Installing Publicador_tcp script to /home/mooz/ros2_ws/install/code/lib/code
+[0.580s] Installing command_client script to /home/mooz/ros2_ws/install/code/lib/code
+[0.580s] Installing command_publisher script to /home/mooz/ros2_ws/install/code/lib/code
+[0.580s] Installing command_server script to /home/mooz/ros2_ws/install/code/lib/code
+[0.580s] Installing command_subscriber script to /home/mooz/ros2_ws/install/code/lib/code
+[0.580s] Installing mgd script to /home/mooz/ros2_ws/install/code/lib/code
+[0.581s] Installing mgd1 script to /home/mooz/ros2_ws/install/code/lib/code
+[0.581s] Installing publisher_subscriber script to /home/mooz/ros2_ws/install/code/lib/code
+[0.581s] Installing robot_controller script to /home/mooz/ros2_ws/install/code/lib/code
+[0.581s] Installing robot_publicador script to /home/mooz/ros2_ws/install/code/lib/code
+[0.581s] Installing robot_publisher script to /home/mooz/ros2_ws/install/code/lib/code
+[0.581s] Installing robot_teleop script to /home/mooz/ros2_ws/install/code/lib/code
+[0.581s] Installing troubleshooting script to /home/mooz/ros2_ws/install/code/lib/code
+[0.581s] writing list of installed files to '/home/mooz/ros2_ws/build/code/install.log'
+[0.598s] Invoked command in '/home/mooz/ros2_ws/src/code' returned '0': AMENT_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs LD_LIBRARY_PATH=/home/mooz/ros2_ws/install/frhal_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mooz/ros2_ws/build/code/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mooz/ros2_ws/install/code/lib/python3.10/site-packages:/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/code build --build-base /home/mooz/ros2_ws/build/code/build install --record /home/mooz/ros2_ws/build/code/install.log --install-scripts $base/lib/code --single-version-externally-managed install_data

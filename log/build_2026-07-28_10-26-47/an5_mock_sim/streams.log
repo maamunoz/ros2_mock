@@ -1,0 +1,45 @@
+[0.433s] Invoking command in '/home/mooz/ros2_ws/src/an5_mock_sim': CMAKE_PREFIX_PATH=/home/mooz/ros2_ws/install/fr_ros2:/home/mooz/ros2_ws/install/frhal_msgs PYTHONPATH=/home/mooz/ros2_ws/build/an5_mock_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mooz/ros2_ws/install/an5_mock_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/an5_mock_sim build --build-base /home/mooz/ros2_ws/build/an5_mock_sim/build install --record /home/mooz/ros2_ws/build/an5_mock_sim/install.log --install-scripts $base/lib/an5_mock_sim --single-version-externally-managed install_data
+[0.588s] running egg_info
+[0.588s] creating ../../build/an5_mock_sim/an5_mock_sim.egg-info
+[0.589s] writing ../../build/an5_mock_sim/an5_mock_sim.egg-info/PKG-INFO
+[0.589s] writing dependency_links to ../../build/an5_mock_sim/an5_mock_sim.egg-info/dependency_links.txt
+[0.589s] writing entry points to ../../build/an5_mock_sim/an5_mock_sim.egg-info/entry_points.txt
+[0.589s] writing requirements to ../../build/an5_mock_sim/an5_mock_sim.egg-info/requires.txt
+[0.589s] writing top-level names to ../../build/an5_mock_sim/an5_mock_sim.egg-info/top_level.txt
+[0.589s] writing manifest file '../../build/an5_mock_sim/an5_mock_sim.egg-info/SOURCES.txt'
+[0.590s] reading manifest file '../../build/an5_mock_sim/an5_mock_sim.egg-info/SOURCES.txt'
+[0.591s] writing manifest file '../../build/an5_mock_sim/an5_mock_sim.egg-info/SOURCES.txt'
+[0.591s] running build
+[0.591s] running build_py
+[0.591s] creating /home/mooz/ros2_ws/build/an5_mock_sim/build
+[0.591s] creating /home/mooz/ros2_ws/build/an5_mock_sim/build/lib
+[0.591s] creating /home/mooz/ros2_ws/build/an5_mock_sim/build/lib/an5_mock_sim
+[0.591s] copying an5_mock_sim/__init__.py -> /home/mooz/ros2_ws/build/an5_mock_sim/build/lib/an5_mock_sim
+[0.591s] copying an5_mock_sim/mock_cmd_server.py -> /home/mooz/ros2_ws/build/an5_mock_sim/build/lib/an5_mock_sim
+[0.591s] running install
+[0.591s] running install_lib
+[0.592s] creating /home/mooz/ros2_ws/install/an5_mock_sim/lib/python3.10/site-packages/an5_mock_sim
+[0.592s] copying /home/mooz/ros2_ws/build/an5_mock_sim/build/lib/an5_mock_sim/__init__.py -> /home/mooz/ros2_ws/install/an5_mock_sim/lib/python3.10/site-packages/an5_mock_sim
+[0.592s] copying /home/mooz/ros2_ws/build/an5_mock_sim/build/lib/an5_mock_sim/mock_cmd_server.py -> /home/mooz/ros2_ws/install/an5_mock_sim/lib/python3.10/site-packages/an5_mock_sim
+[0.593s] byte-compiling /home/mooz/ros2_ws/install/an5_mock_sim/lib/python3.10/site-packages/an5_mock_sim/__init__.py to __init__.cpython-310.pyc
+[0.593s] byte-compiling /home/mooz/ros2_ws/install/an5_mock_sim/lib/python3.10/site-packages/an5_mock_sim/mock_cmd_server.py to mock_cmd_server.cpython-310.pyc
+[0.598s] running install_data
+[0.599s] creating /home/mooz/ros2_ws/install/an5_mock_sim/share/ament_index
+[0.599s] creating /home/mooz/ros2_ws/install/an5_mock_sim/share/ament_index/resource_index
+[0.599s] creating /home/mooz/ros2_ws/install/an5_mock_sim/share/ament_index/resource_index/packages
+[0.599s] copying resource/an5_mock_sim -> /home/mooz/ros2_ws/install/an5_mock_sim/share/ament_index/resource_index/packages
+[0.599s] copying package.xml -> /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim
+[0.599s] creating /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/launch
+[0.599s] copying launch/sim.launch.py -> /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/launch
+[0.599s] copying launch/real.launch.py -> /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/launch
+[0.599s] creating /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/scripts
+[0.599s] copying scripts/disable_robot_ip_alias.sh -> /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/scripts
+[0.599s] copying scripts/enable_robot_ip_alias.sh -> /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/scripts
+[0.599s] copying scripts/reject_robot_xmlrpc.sh -> /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/scripts
+[0.599s] copying scripts/disable_reject_robot_xmlrpc.sh -> /home/mooz/ros2_ws/install/an5_mock_sim/share/an5_mock_sim/scripts
+[0.599s] running install_egg_info
+[0.600s] Copying ../../build/an5_mock_sim/an5_mock_sim.egg-info to /home/mooz/ros2_ws/install/an5_mock_sim/lib/python3.10/site-packages/an5_mock_sim-0.0.1-py3.10.egg-info
+[0.601s] running install_scripts
+[0.615s] Installing mock_cmd_server script to /home/mooz/ros2_ws/install/an5_mock_sim/lib/an5_mock_sim
+[0.615s] writing list of installed files to '/home/mooz/ros2_ws/build/an5_mock_sim/install.log'
+[0.633s] Invoked command in '/home/mooz/ros2_ws/src/an5_mock_sim' returned '0': CMAKE_PREFIX_PATH=/home/mooz/ros2_ws/install/fr_ros2:/home/mooz/ros2_ws/install/frhal_msgs PYTHONPATH=/home/mooz/ros2_ws/build/an5_mock_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mooz/ros2_ws/install/an5_mock_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/an5_mock_sim build --build-base /home/mooz/ros2_ws/build/an5_mock_sim/build install --record /home/mooz/ros2_ws/build/an5_mock_sim/install.log --install-scripts $base/lib/an5_mock_sim --single-version-externally-managed install_data

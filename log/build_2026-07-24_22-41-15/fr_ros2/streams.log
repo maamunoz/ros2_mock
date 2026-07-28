@@ -1,0 +1,108 @@
+[0.025s] Invoking command in '/home/mooz/ros2_ws/build/fr_ros2': AMENT_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mooz/ros2_ws/install/frhal_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mooz/ros2_ws/build/fr_ros2 -- -j8 -l8
+[0.151s] [ 37%] Built target srv_test_client
+[0.170s] [ 50%] Building CXX object CMakeFiles/ros2_cmd_server.dir/src/ROS_API.cpp.o
+[0.713s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:297:114: warning: backslash and newline separated by space
+[0.713s]   297 | void ROS_API::_ParseROSCommandData_callback(const std::shared_ptr<frhal_msgs::srv::ROSCmdInterface::Request> req,\
+[0.714s]       |                                                                                                                   
+[4.253s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp: In constructor ‘ROS_API::ROS_API(std::string)’:
+[4.253s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:52:56: warning: unsigned conversion from ‘int’ to ‘unsigned char’ changes value from ‘30000’ to ‘48’ [-Woverflow]
+[4.253s]    52 |     this->declare_parameter<uint8_t>("gripper_maxtime",30000);
+[4.253s]       |                                                        ^~~~~
+[4.331s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp: In member function ‘int ROS_API::_def_jnt_position(std::string)’:
+[4.331s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:350:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<JointPos>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.331s]   350 |         if(idx > _cmd_jnt_pos_list.size()+1 || idx <= 0){//如果大于当前容器最大值+1,那么要报错，因为序列容器中间无法留空
+[4.331s]       |            ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.332s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:353:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<JointPos>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.332s]   353 |         }else if(idx <= _cmd_jnt_pos_list.size()){//如果是小于等于当前的容量，那么就是点位信息覆盖
+[4.332s]       |                  ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.332s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:358:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<JointPos>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.332s]   358 |         }else if(idx == _cmd_jnt_pos_list.size()+1){//添加元素
+[4.333s]       |                  ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.336s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp: In member function ‘int ROS_API::_def_cart_position(std::string)’:
+[4.336s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:393:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<DescPose>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.336s]   393 |         if(idx > _cmd_cart_pos_list.size()+1 || idx <= 0){//如果大于当前容器最大值+1,那么要报错，因为序列容器中间无法留空
+[4.336s]       |            ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.337s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:396:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<DescPose>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.337s]   396 |         }else if(idx <= _cmd_cart_pos_list.size()){//如果是小于等于当前的容量，那么就是点位信息覆盖
+[4.337s]       |                  ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.337s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:403:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<DescPose>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.337s]   403 |         }else if(idx == _cmd_cart_pos_list.size()+1){//添加元素
+[4.338s]       |                  ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.340s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp: In member function ‘std::string ROS_API::_get_variable(std::string)’:
+[4.340s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:426:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<JointPos>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.340s]   426 |             if(idx <= _cmd_jnt_pos_list.size() && idx > 0){
+[4.340s]       |                ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.342s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:440:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<DescPose>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.342s]   440 |                 if(idx <= _cmd_cart_pos_list.size() && idx > 0){
+[4.343s]       |                    ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.360s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp: In member function ‘int ROS_API::MoveJ(std::string)’:
+[4.360s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:700:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<JointPos>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.360s]   700 |         if(index > _cmd_jnt_pos_list.size()){
+[4.360s]       |            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.365s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:742:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<DescPose>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.365s]   742 |         if(index > _cmd_cart_pos_list.size()){
+[4.365s]       |            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.376s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp: In member function ‘int ROS_API::MoveL(std::string)’:
+[4.376s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:818:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<JointPos>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.376s]   818 |         if(index > _cmd_jnt_pos_list.size()){
+[4.376s]       |            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.381s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:854:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<DescPose>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.381s]   854 |         if(index > _cmd_cart_pos_list.size()){
+[4.381s]       |            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.391s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp: In member function ‘int ROS_API::MoveC(std::string)’:
+[4.391s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:930:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<JointPos>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.391s]   930 |         if(index > _cmd_jnt_pos_list.size() || index2 > _cmd_jnt_pos_list.size()){
+[4.391s]       |            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.392s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:930:55: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<JointPos>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.392s]   930 |         if(index > _cmd_jnt_pos_list.size() || index2 > _cmd_jnt_pos_list.size()){
+[4.392s]       |                                                ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.398s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:986:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<DescPose>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.398s]   986 |         if(index > _cmd_cart_pos_list.size() || index2 > _cmd_cart_pos_list.size()){
+[4.398s]       |            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.398s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:986:56: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<DescPose>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.398s]   986 |         if(index > _cmd_cart_pos_list.size() || index2 > _cmd_cart_pos_list.size()){
+[4.398s]       |                                                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.410s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp: In member function ‘int ROS_API::Circle(std::string)’:
+[4.410s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:1057:33: warning: unused parameter ‘para’ [-Wunused-parameter]
+[4.410s]  1057 | int ROS_API::Circle(std::string para){
+[4.410s]       |                     ~~~~~~~~~~~~^~~~
+[4.412s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp: In member function ‘int ROS_API::SplinePTP(std::string)’:
+[4.412s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:1109:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<JointPos>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.412s]  1109 |         if(index > _cmd_jnt_pos_list.size()){
+[4.412s]       |            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.418s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp: In member function ‘int ROS_API::NewSplinePoint(std::string)’:
+[4.419s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:1175:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<DescPose>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.419s]  1175 |         if(index > _cmd_cart_pos_list.size()){
+[4.419s]       |            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.028s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp: In member function ‘int ROS_API::_send_data_factory_callback(std::string)’:
+[6.028s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:261:1: warning: control reaches end of non-void function [-Wreturn-type]
+[6.028s]   261 | }
+[6.028s]       | ^
+[6.176s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp: In member function ‘std::string ROS_API::_get_variable(std::string)’:
+[6.177s] /home/mooz/ros2_ws/src/fr_ros2/src/ROS_API.cpp:460:1: warning: control reaches end of non-void function [-Wreturn-type]
+[6.177s]   460 | }
+[6.177s]       | ^
+[10.543s] [ 62%] Linking CXX executable ros2_cmd_server
+[11.081s] [100%] Built target ros2_cmd_server
+[11.095s] Invoked command in '/home/mooz/ros2_ws/build/fr_ros2' returned '0': AMENT_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mooz/ros2_ws/install/frhal_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mooz/ros2_ws/build/fr_ros2 -- -j8 -l8
+[11.109s] Invoking command in '/home/mooz/ros2_ws/build/fr_ros2': AMENT_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mooz/ros2_ws/install/frhal_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mooz/ros2_ws/build/fr_ros2
+[11.123s] -- Install configuration: ""
+[11.125s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/lib/fr_ros2/ros2_cmd_server
+[11.128s] -- Set runtime path of "/home/mooz/ros2_ws/install/fr_ros2/lib/fr_ros2/ros2_cmd_server" to ""
+[11.130s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/lib/fr_ros2/srv_test_client
+[11.130s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/share/ament_index/resource_index/package_run_dependencies/fr_ros2
+[11.130s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/share/ament_index/resource_index/parent_prefix_path/fr_ros2
+[11.131s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/environment/ament_prefix_path.sh
+[11.131s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/environment/ament_prefix_path.dsv
+[11.131s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/environment/path.sh
+[11.132s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/environment/path.dsv
+[11.133s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/local_setup.bash
+[11.133s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/local_setup.sh
+[11.133s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/local_setup.zsh
+[11.133s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/local_setup.dsv
+[11.133s] -- Installing: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/package.dsv
+[11.133s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/share/ament_index/resource_index/packages/fr_ros2
+[11.133s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/cmake/fr_ros2Config.cmake
+[11.133s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/cmake/fr_ros2Config-version.cmake
+[11.134s] -- Up-to-date: /home/mooz/ros2_ws/install/fr_ros2/share/fr_ros2/package.xml
+[11.137s] Invoked command in '/home/mooz/ros2_ws/build/fr_ros2' returned '0': AMENT_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mooz/ros2_ws/install/frhal_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mooz/ros2_ws/install/frhal_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mooz/ros2_ws/install/frhal_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mooz/ros2_ws/build/fr_ros2
