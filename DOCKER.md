@@ -55,15 +55,35 @@ docker compose --profile real run --rm --name an5_api_command_echo fr5-real \
     ros2 topic echo /api_command
 ```
 
+## Docker Desktop (Mac/Windows/Linux)
+
+`docker-compose.yml` usa `network_mode: host`, que en Docker Desktop **no**
+expone el puerto al host real (el contenedor lo ve como abierto, pero
+`network_mode: host` ahi apunta a la red interna de la VM de Docker
+Desktop, no a tu maquina -- confirmado: `rosbridge_websocket` loguea
+"started on port 9090" pero `localhost:9090` da connection refused desde
+afuera). Usa el compose alternativo `docker-compose.desktop.yml`, que
+publica el puerto explicitamente:
+
+```bash
+docker compose -f docker-compose.desktop.yml build
+
+docker compose -f docker-compose.desktop.yml up fr5-sim
+
+docker compose -f docker-compose.desktop.yml --profile real up fr5-real
+```
+
+Alcanza para que Unity se conecte via rosbridge en `localhost:9090`, pero
+a diferencia de `network_mode: host`, nodos ROS2 nativos corriendo fuera
+del contenedor no van a poder descubrir los del contenedor (DDS no pasa
+por el mapeo de puertos).
+
+Los comandos de "nodos separados" de arriba tambien funcionan en Docker
+Desktop agregando `-f docker-compose.desktop.yml` despues de `docker
+compose`.
+
 ## Notas
 
-- Los servicios usan `network_mode: host` (Linux) para que el contenedor
-  vea la red del controlador real y para que la comunicacion ROS2/DDS no
-  tenga problemas con NAT. En Docker Desktop (Mac/Windows), donde
-  `network_mode: host` no aplica igual, sacar esa linea y usar en cambio
-  `ports: ["9090:9090"]` -- alcanza para que Unity se conecte via
-  rosbridge, pero nodos ROS2 nativos fuera del contenedor no van a poder
-  descubrir los del contenedor.
 - Pasar argumentos de launch (ver tabla en `src/an5_mock_sim/README.md`),
   por ejemplo:
 

@@ -144,7 +144,9 @@ docker compose up fr5-sim
 docker compose --profile real up fr5-real
 ```
 
-Ver [`DOCKER.md`](DOCKER.md) para notas de red (`network_mode: host` vs.
-Docker Desktop), correr el modo real como contenedores separados por
-nodo (lo que automatiza `setup_an5_robot_windows.sh`), pasar argumentos
+En Docker Desktop (Mac/Windows/Linux) usar `docker-compose.desktop.yml`
+en vez de `docker-compose.yml` -- `network_mode: host` no expone el
+puerto al host real ahi. Ver [`DOCKER.md`](DOCKER.md) para el detalle,
+correr el modo real como contenedores separados por nodo (lo que
+automatiza `setup_an5_robot_windows.sh`), pasar argumentos
 de launch con `docker compose run`, e instrucciones de rebuild.

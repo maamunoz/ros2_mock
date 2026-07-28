@@ -12,7 +12,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         python3-rosdep \
         build-essential \
         ros-humble-rosbridge-server \
-    && rosdep init \
+    # `|| true`: algunas builds de la imagen base ya traen rosdep
+    # inicializado (20-default.list preexistente), y `rosdep init` falla
+    # si el sources list ya existe -- no es un error real, solo ya esta.
+    && (rosdep init || true) \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /ros2_ws
