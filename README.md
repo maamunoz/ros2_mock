@@ -144,31 +144,13 @@ docker compose up fr5-sim
 docker compose --profile real up fr5-real
 ```
 
-### Docker Desktop (Mac/Windows/Linux)
+Funciona igual en Linux nativo y en Docker Desktop (Mac/Windows) -- el
+puerto 9090 se expone via `ports` en `docker-compose.yml`, no con
+`network_mode: host` (que en Docker Desktop deja rosbridge inalcanzable
+para Unity). Unity se conecta a `ws://localhost:9090` (o la IP de esta
+maquina si Unity corre en otra).
 
-`docker-compose.yml` usa `network_mode: host`, que en Docker Desktop
-**no** expone el puerto 9090 a tu maquina real (el contenedor arranca
-`rosbridge_websocket` bien, pero queda aislado dentro de la VM de Docker
-Desktop -- Unity nunca logra conectar). Usar en cambio
-`docker-compose.desktop.yml`, que publica el puerto explicitamente:
-
-```bash
-docker compose -f docker-compose.desktop.yml build
-
-# Modo simulado (default, sin robot fisico)
-docker compose -f docker-compose.desktop.yml up fr5-sim
-
-# Modo real (requiere el controlador FR5/AN5 en 192.168.58.2)
-docker compose -f docker-compose.desktop.yml --profile real up fr5-real
-```
-
-Unity se conecta igual que siempre, a `ws://localhost:9090` (o la IP de
-esta maquina si Unity corre en otra). Si Unity no conecta, lo primero a
-chequear es que se haya usado `docker-compose.desktop.yml` y no
-`docker-compose.yml` -- confundirlos es la causa mas comun de que
-rosbridge quede inalcanzable en Docker Desktop.
-
-Ver [`DOCKER.md`](DOCKER.md) para el detalle de por que pasa esto, correr
-el modo real como contenedores separados por nodo (lo que automatiza
-`setup_an5_robot_windows.sh`), pasar argumentos de launch con
-`docker compose run`, e instrucciones de rebuild.
+Ver [`DOCKER.md`](DOCKER.md) para correr el modo real como contenedores
+separados por nodo (lo que automatiza `setup_an5_robot_windows.sh`),
+pasar argumentos de launch con `docker compose run`, e instrucciones de
+rebuild.

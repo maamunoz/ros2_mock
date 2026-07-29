@@ -33,9 +33,9 @@ docker compose --profile real up fr5-real
 ### Modo real: nodos separados (un contenedor por nodo)
 
 Igual que corriendolo nativo en 4 terminales separadas, pero cada uno en su
-propio contenedor (mismo `network_mode: host`, se descubren entre si sin
-problema). Preferible si queres poder reiniciar/inspeccionar un nodo sin
-tocar los demas -- es lo que automatiza `setup_an5_robot_windows.sh`:
+propio contenedor. Preferible si queres poder reiniciar/inspeccionar un
+nodo sin tocar los demas -- es lo que automatiza
+`setup_an5_robot_windows.sh`:
 
 ```bash
 # Terminal 1: driver real
@@ -55,34 +55,19 @@ docker compose --profile real run --rm --name an5_api_command_echo fr5-real \
     ros2 topic echo /api_command
 ```
 
-## Docker Desktop (Mac/Windows/Linux)
-
-`docker-compose.yml` usa `network_mode: host`, que en Docker Desktop **no**
-expone el puerto al host real (el contenedor lo ve como abierto, pero
-`network_mode: host` ahi apunta a la red interna de la VM de Docker
-Desktop, no a tu maquina -- confirmado: `rosbridge_websocket` loguea
-"started on port 9090" pero `localhost:9090` da connection refused desde
-afuera). Usa el compose alternativo `docker-compose.desktop.yml`, que
-publica el puerto explicitamente:
-
-```bash
-docker compose -f docker-compose.desktop.yml build
-
-docker compose -f docker-compose.desktop.yml up fr5-sim
-
-docker compose -f docker-compose.desktop.yml --profile real up fr5-real
-```
-
-Alcanza para que Unity se conecte via rosbridge en `localhost:9090`, pero
-a diferencia de `network_mode: host`, nodos ROS2 nativos corriendo fuera
-del contenedor no van a poder descubrir los del contenedor (DDS no pasa
-por el mapeo de puertos).
-
-Los comandos de "nodos separados" de arriba tambien funcionan en Docker
-Desktop agregando `-f docker-compose.desktop.yml` despues de `docker
-compose`.
-
 ## Notas
+
+- El compose usa `ports: ["9090:9090"]` (no `network_mode: host`), asi que
+  funciona igual en Linux nativo y en Docker Desktop (Mac/Windows) sin
+  tocar nada -- ese fue justamente el bug que teniamos antes con
+  `network_mode: host` en Docker Desktop: rosbridge arrancaba bien
+  adentro del contenedor pero el puerto quedaba aislado en la red interna
+  de la VM de Docker Desktop, y Unity nunca lograba conectar. El costo:
+  nodos ROS2 nativos corriendo fuera del contenedor no van a poder
+  descubrir los de aca por DDS (el mapeo de puertos no alcanza para eso,
+  solo sirve para rosbridge). Para inspeccionar el grafo ROS2 desde
+  afuera sin eso, usar `docker exec fr5_ros2_sim ros2 topic list` (o el
+  nombre del contenedor que corresponda) en vez de un `ros2` nativo.
 
 - Pasar argumentos de launch (ver tabla en `src/an5_mock_sim/README.md`),
   por ejemplo:

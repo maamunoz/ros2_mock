@@ -3,14 +3,15 @@ services:
     build: .
     image: fr5_ros2:latest
     container_name: fr5_ros2_sim
-    # network_mode host: evita todo el lio de configurar DDS/rosbridge a traves
-    # de NAT y le permite al contenedor llegar directo a la red donde esta
-    # Unity (o el controlador real, en el otro servicio). Solo funciona en
-    # hosts Linux; en Docker Desktop (Mac/Windows) sacar esta linea y usar el
-    # bloque "ports" comentado mas abajo.
-    network_mode: host
-    # ports:
-    #   - "9090:9090"
+    # ports (no network_mode: host): funciona igual en Linux y en Docker
+    # Desktop (Mac/Windows) -- ahi network_mode: host apunta a la red
+    # interna de la VM de Docker Desktop, no a la maquina real, y el
+    # puerto queda inalcanzable para Unity. El costo: nodos ROS2 nativos
+    # fuera del contenedor no van a poder descubrir los de aca por DDS
+    # (el mapeo de puertos no alcanza para eso); para inspeccionar el
+    # grafo ROS2 desde afuera usar `docker exec fr5_ros2_sim ros2 ...`.
+    ports:
+      - "9090:9090"
     environment:
       - ROS_DOMAIN_ID=0
     command: ["ros2", "launch", "an5_mock_sim", "sim.launch.py"]
@@ -19,10 +20,8 @@ services:
     build: .
     image: fr5_ros2:latest
     container_name: fr5_ros2_real
-    # Modo real: el controlador FR5/AN5 esta hardcodeado en 192.168.58.2, asi
-    # que el contenedor necesita estar en esa misma red -- de nuevo, mas
-    # simple con network_mode host.
-    network_mode: host
+    ports:
+      - "9090:9090"
     environment:
       - ROS_DOMAIN_ID=0
     command: ["ros2", "launch", "an5_mock_sim", "real.launch.py"]
